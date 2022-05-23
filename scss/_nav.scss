@@ -1,0 +1,75 @@
+nav {
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-bottom: solid 4px rgb(26, 26, 26);
+
+    .navbar-brand {
+
+        padding-top: 0;
+        margin-left: 15px;
+        margin-bottom: 20px;
+        max-height: 50px;
+        
+    }
+
+    img {
+        max-width: 55px;
+        margin-top: 8px;
+    }
+
+    li {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        padding: 15px 15px;
+        font-weight: 650;
+        align-content: flex-end;
+        align-items: flex-end;
+       
+
+        
+
+        
+        
+        .ov-btn-grow-ellipse {
+            background: rgb(17, 17, 17); /* color de fondo */
+            border: 2px solid rgb(17, 17, 17); /* tamaño y color de borde */
+            padding: 16px 20px;
+            border-radius: 50px; /* redondear bordes */
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            display: inline-block;
+            width: auto;
+            height: 50px;
+            margin-top: 5px;
+            padding-top: 5px;
+          }
+          .ov-btn-grow-ellipse:hover {
+            color: #fff;/* color de fuente hover */
+          }
+          .ov-btn-grow-ellipse::after {
+            content: "";
+            background: #e24848c7; /* color de fondo hover */
+            position: absolute;
+            z-index: -1;
+            padding: 16px 20px;
+            display: block;
+            border-radius: 50%;
+            left: -50%;
+            right: -50%;
+            top: -150%;
+            bottom: -150%;
+            transform: scale(0, 0);
+            transition: all 0.4s ease;
+          }
+          .ov-btn-grow-ellipse:hover::after {
+            transition: all 0.6s ease-out;
+            transform: scale(1, 1);
+          }
+        
+
+    }
+}
